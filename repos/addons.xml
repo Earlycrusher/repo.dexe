@@ -90,6 +90,7 @@ repository.dutchgreen
 repository.easynewsx
 repository.enigmawiz
 repository.EzzerMacsWizard
+repository.eon
 repository.fanfilm
 repository.forge
 repository.foxystreams
@@ -158,6 +159,7 @@ repository.Rockcrusher
 repository.sandmann79.plugins
 repository.sarsaila
 repository.siku2
+repository.seizu
 repository.simplewizard
 repository.skinbase.nexus
 repository.skins.pkscout
@@ -1692,6 +1694,28 @@ Various other small tweaks and refinements throughout.</news>
 	</extension>
 </addon>
 
+<addon id="repository.eon" name="EON Add-on Repository" version="1.0.3" provider-name="Davor Dragic">
+	<extension point="xbmc.addon.repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en_GB">EON Add-on Repository</summary>
+		<summary lang="sl_SI">Repozitorij dodatkov EON</summary>
+		<summary lang="hr_HR">EON repozitorij dodataka</summary>
+		<description lang="en_GB">Repository for the EON PVR client and the EON skin.</description>
+		<description lang="sl_SI">Repozitorij za dodatek EON PVR odjemalec in preobleko EON.</description>
+		<description lang="hr_HR">Repozitorij za dodatak EON PVR klijent i presvlaku EON.</description>
+		<assets>
+			<icon>icon.png</icon>
+		</assets> 		
+	</extension>
+</addon>
+
 <addon id="repository.fanfilm" name="FanFilm Repository" version="1.0" provider-name="FF Team">
 	<extension point="xbmc.addon.repository" name="FanFilm Repository">
 		<dir>
@@ -3022,6 +3046,24 @@ Posle toga sve nove verzije stizu same, bez ijednog zipa.</description>
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.seizu" name="seizu Repo" version="1.7.12" provider-name="seizu">
+	<extension point="xbmc.addon.repository" name="seizu Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/deklica/repo.dexe/master/repos/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/deklica/repo.dexe/master/repo/</datadir>
+		</dir>	
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<description lang="en">seizuRepo (tm)</description>
+		<website>https://seizu.github.io/seizuRepo</website>
+		<assets>
+			<icon>icon.png</icon>
+		</assets> 			
 	</extension>
 </addon>
 
