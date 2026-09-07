@@ -350,10 +350,14 @@
 		<!-- Audio/Subtitles buttons set to open settings -->
 		<value condition="Control.HasFocus(70056) + String.IsEqual(Skin.String(OSDAudioButtonMode),Audio settings)">$LOCALIZE[31620]</value>
 		<value condition="Control.HasFocus(70057) + String.IsEqual(Skin.String(OSDSubtitleButtonMode),Subtitle settings)">$LOCALIZE[31621]</value>
+		<!-- No subtitles available: button falls back to settings dialog -->
+		<value condition="Control.HasFocus(70057) + !VideoPlayer.HasSubtitles">$LOCALIZE[31621]</value>
 		<!-- Audio/Subtitles buttons set to cycle next language -->
+		<value condition="Control.HasFocus(70056) + [String.IsEmpty(VideoPlayer.AudioLanguage) | String.IsEqual(VideoPlayer.AudioLanguage,und)]">$LOCALIZE[31618] ($LOCALIZE[13205])</value>
 		<value condition="Control.HasFocus(70056)">$LOCALIZE[31618] ([CAPITALIZE]$INFO[VideoPlayer.AudioLanguage][/CAPITALIZE])</value>
-		<value condition="Control.HasFocus(70057) + VideoPlayer.SubtitlesEnabled">$LOCALIZE[31619] ([CAPITALIZE]$INFO[VideoPlayer.SubtitlesLanguage][/CAPITALIZE])</value>
-		<value condition="Control.HasFocus(70057) + !VideoPlayer.SubtitlesEnabled">$LOCALIZE[31619] (Disabled)</value>
+		<value condition="Control.HasFocus(70057) + !VideoPlayer.SubtitlesEnabled">$LOCALIZE[31619] ($LOCALIZE[1223])</value>
+		<value condition="Control.HasFocus(70057) + [String.IsEmpty(VideoPlayer.SubtitlesLanguage) | String.IsEqual(VideoPlayer.SubtitlesLanguage,und)]">$LOCALIZE[31619] ($LOCALIZE[13205])</value>
+		<value condition="Control.HasFocus(70057)">$LOCALIZE[31619] ([CAPITALIZE]$INFO[VideoPlayer.SubtitlesLanguage][/CAPITALIZE])</value>
 		<!-- Subtitle offset button -->
 		<value condition="Control.HasFocus(70058)">$LOCALIZE[31622]</value>
 		<!-- Estuary default subtitle button -->

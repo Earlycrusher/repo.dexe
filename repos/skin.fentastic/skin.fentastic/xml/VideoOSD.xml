@@ -168,9 +168,9 @@
 						<include content="OSDButton">
 							<param name="texture" value="osd/fullscreen/buttons/next-subtitle.png"/>
 						</include>
-						<onclick condition="String.IsEqual(Skin.String(OSDSubtitleButtonMode),Subtitle settings)">ActivateWindow(osdsubtitlesettings)</onclick>
-						<onclick condition="String.IsEqual(Skin.String(OSDSubtitleButtonMode),Next subtitle)">NextSubtitle</onclick>
-						<visible>!Skin.HasSetting(StockEstuaryVideoOSD) + !VideoPlayer.Content(LiveTV) + [String.IsEqual(Skin.String(OSDSubtitleButtonMode),Subtitle settings) | [String.IsEqual(Skin.String(OSDSubtitleButtonMode),Next subtitle) + VideoPlayer.HasSubtitles]]</visible>
+						<onclick condition="String.IsEqual(Skin.String(OSDSubtitleButtonMode),Subtitle settings) | !VideoPlayer.HasSubtitles">ActivateWindow(osdsubtitlesettings)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(OSDSubtitleButtonMode),Next subtitle) + VideoPlayer.HasSubtitles">NextSubtitle</onclick>
+						<visible>!Skin.HasSetting(StockEstuaryVideoOSD) + !VideoPlayer.Content(LiveTV) + [String.IsEqual(Skin.String(OSDSubtitleButtonMode),Subtitle settings) | String.IsEqual(Skin.String(OSDSubtitleButtonMode),Next subtitle)]</visible>
 					</control>
 					<!-- Estuary Default Subtitle Button -->
 					<control type="radiobutton" id="70059">
