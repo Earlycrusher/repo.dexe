@@ -801,7 +801,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="2.5.5">
+<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="2.5.9">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -2501,7 +2501,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.gearsscrapers" version="1.5.8" name="Gears Scrapers" provider-name="gearsscrapers">
+<addon id="script.module.gearsscrapers" version="1.5.9" name="Gears Scrapers" provider-name="gearsscrapers">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -2607,7 +2607,7 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.magneto" version="6.09.01" name="Magneto Module" provider-name="Magneto">
+<addon id="script.module.magneto" version="6.09.02" name="Magneto Module" provider-name="Magneto">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -2935,7 +2935,7 @@ v1.0.1 (2019-08-06)
 
 
 <addon id="script.xbmcbackup"
-    name="Backup" version="1.7.2" provider-name="robweber">
+    name="Backup" version="1.7.3" provider-name="robweber">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.dateutil" version="2.8.0" />
@@ -2959,9 +2959,8 @@ v1.0.1 (2019-08-06)
 		<screenshot>screenshot3.jpg</screenshot>
 		<screenshot>screenshot4.jpg</screenshot>
     </assets>
-    <news>Version 1.7.2
-Fix bug with gui settings restore
-strptime Python bugfix
+    <news>Version 1.7.3
+additional strptime modifications to fix scheduler behavior
 </news>
     <summary lang="ar_SA">إنسخ إحتياطياً قاعده بيانات إكس بى إم سى وملفات اﻹعدادات فى حاله وقوع إنهيار مع إمكانيه اﻹسترجاع</summary>
     <summary lang="bg_BG">Добавката може да създава резервни копия и възстановява базата данни и настройките на Kodi, в случай на срив или повреда на файловете.</summary>
