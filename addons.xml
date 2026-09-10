@@ -583,7 +583,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.playlistbee" name="[COLORorangered]Bee[/COLOR]" version="4.0.0" provider-name="dEXE / Nux007, Publish3r, Silhouette2022, Bee, 1X, Romy, AS">
+<addon id="plugin.video.playlistbee" name="[COLORorangered]Bee[/COLOR]" version="4.0.1" provider-name="dEXE / Nux007, Publish3r, Silhouette2022, Bee, 1X, Romy, AS">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.dateutil" version="2.8.2"/>
@@ -608,48 +608,7 @@ service.subtitles.titlovi
 		<language>en</language>
 		<platform>all</platform>
 		<license>GPL-3.0-or-later</license>
-		<news>[COLORorangered][B]v4.0.0[/B][/COLOR]
-
-[B]New features[/B]
-- Search: find channels, groups, series and playlists across all your lists from one place, with results grouped by type
-- Virtual folders: organize playlists into custom folders with your own names and icons
-- Favorites: add any channel to favorites from the context menu, reorder them freely, jump straight back to the channel's original list and group
-- Custom favorites: manually add your own channel by name and URL
-- Recently watched: keeps a history of everything you play, with quick access to jump back in or resume the last channel
-- Random channel: instantly play a random channel from any list, group, series or your favorites
-- Manual sorting: switch any list or group between alphabetical and original order from its context menu
-- Series grouping: episodes are collected into their own folders instead of cluttering the channel list
-- Diagnostics: "Check sources &amp; playlists" tool validates all your sources and shows a clear OK/failure status for each
-- Breadcrumb headers: always see which list or section you are currently browsing
-
-[B]Playlists[/B]
-- Xtream Codes lists are set up automatically, including their EPG
-- Damaged playlists are repaired on the fly, so broken entries no longer cost you channels
-- Global logo source, plus an optional database that fills in logos for channels that have none
-
-[B]EPG improvements[/B]
-- Live program info with now/next details, duration, genres and artwork directly in channel listings
-- Smarter channel matching: country-aware detection greatly reduces wrong EPG data on multi-country lists
-- Reliable fallback: when the primary EPG source has no live data, a backup source is used automatically
-- Global EPG source for lists that come without their own
-- Much faster EPG loading and rendering, most noticeable on large channel lists
-- EPG data is prepared in the background, so browsing stays smooth
-
-[B]Playback[/B]
-- Auto-reconnect: live streams cut off by the provider are restored automatically, without leaving the player
-- Faster channel start
-- Better automatic detection of HLS and DASH streams for adaptive playback
-- Radio and audio-only streams are recognized and played correctly, with their own icon
-- Movies and series play reliably even when the file name does not match the actual video format
-- New "Play via FFmpeg (no adaptive)" context option as a manual fallback when a stream won't start normally
-
-[B]Fixes &amp; stability[/B]
-- Cache cleanup no longer leaves stale temporary files behind
-- Settings changes now apply immediately after closing the settings dialog
-- Fixed cases where the diagnostics progress dialog could get stuck on screen
-- Fixed search skipping remaining channels when a playlist entry was malformed
-- Numerous smaller fixes in channel titles, categories, grouping and sorting
-- General performance and stability improvements throughout the addon</news>
+		<news></news>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
