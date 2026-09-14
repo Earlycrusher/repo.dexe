@@ -38,9 +38,11 @@ context.trailer.play
 script.playrandomvideos
 
 === Subtitles ===
+service.subtitles.exyusubs
 service.subtitles.localsubtitle
 service.subtitles.opensubtitles_by_opensubtitles
 service.subtitles.opensubtitles_plus
+service.subtitles.titlovi
 
 === Program &amp; Services ===
 plugin.program.autoenabler
@@ -136,7 +138,6 @@ script.module.infotagger
 === GF ===
 plugin.video.BauBauVavoo - Broken
 plugin.video.GreenKlikPremium
-service.subtitles.titlovi
 
 -->
 
@@ -178,7 +179,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.dltv" name="DLTV" version="1.2.5" provider-name="arkane14">
+<addon id="plugin.video.dltv" name="DLTV" version="1.2.6" provider-name="arkane14">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" />
@@ -760,7 +761,7 @@ service.subtitles.titlovi
 </addon>
 
 
-<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="2.5.9">
+<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="2.6.2">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -1448,6 +1449,30 @@ v2.0.0 (2021-01-29)
 
 
 <!-- ====================================================================== -->
+
+
+<addon id="service.subtitles.exyusubs" name="ExYuSubtitles" version="1.0.0" provider-name="dEXE">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.31.0"/>
+	</requires>
+	<extension point="xbmc.subtitle.module" library="main.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">OpenSubtitles v3</summary>
+		<description lang="en_GB">Search and download Ex-Yu subtitles for movies and TV shows from OpenSubtitles - zero setup.[CR][CR]Supports Serbian, Bosnian, Croatian, Slovenian, and Macedonian, with English as a fallback language.</description>
+		<description lang="sr_RS@latin">Pretraga i preuzimanje ex-yu titlova za filmove i serije sa OpenSubtitles-a - bez naloga i bez podešavanja.[CR][CR]Podržani su srpski, bosanski, hrvatski, slovenački i makedonski, uz engleski jezik kao rezervu kada ništa nije pronađeno.</description>
+		<description lang="sr_RS">Претрага и преузимање ex-yu титлова за филмове и серије са OpenSubtitles-а - без налога и без подешавања.[CR][CR]Подржани су српски, босански, хрватски, словеначки и македонски, уз енглески језик као резерву када ништа није пронађено.</description>
+		<disclaimer lang="en_GB">Works without log-in.</disclaimer>
+		<language>en sr hr bs mk sl</language>
+		<platform>all</platform>
+		<license>GPL-3.0-or-later</license>
+		<website>https://www.opensubtitles.org</website>
+		<source>https://github.com/dexe-kodi-addons/service.subtitles.exyusubs</source>
+		<assets>
+			<icon>icon.png</icon>	
+		</assets>
+	</extension>
+</addon>
 
 
 <addon id="service.subtitles.localsubtitle"
@@ -2460,7 +2485,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.gearsscrapers" version="1.5.9" name="Gears Scrapers" provider-name="gearsscrapers">
+<addon id="script.module.gearsscrapers" version="1.6.1" name="Gears Scrapers" provider-name="gearsscrapers">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -2481,7 +2506,7 @@ In order to get the API Key:
 </addon>
 
 
-<addon id="script.module.inputstreamhelper" name="InputStream Helper" version="0.8.5" provider-name="emilsvennesson, dagwieers, mediaminister, horstle">
+<addon id="script.module.inputstreamhelper" name="InputStream Helper" version="0.8.6" provider-name="emilsvennesson, dagwieers, mediaminister, horstle">
   <requires>
     <!--py3 compliant-->
     <import addon="xbmc.python" version="3.0.0"/>
@@ -2566,7 +2591,7 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.magneto" version="6.09.02" name="Magneto Module" provider-name="Magneto">
+<addon id="script.module.magneto" version="6.09.03" name="Magneto Module" provider-name="Magneto">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
