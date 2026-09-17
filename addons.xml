@@ -8,8 +8,6 @@ plugin.video.dltv
 plugin.video.dreammachine
 plugin.video.elementum
 plugin.video.eonvod
-plugin.video.fen
-plugin.video.fenlight (FenLightAM / Fen Light+ / Fen Light) - Deprecated
 plugin.video.free99
 plugin.video.gratisred
 plugin.video.iatheater
@@ -17,18 +15,14 @@ plugin.video.imdb.trailers
 plugin.video.json_iptv
 plugin.video.last_played
 plugin.video.playlistbee
-plugin.video.premiumizerx
 plugin.video.ptfm
-plugin.video.realizerx
 plugin.video.redlight
 plugin.video.seren
 plugin.video.spotitube
 plugin.video.vidscr
 plugin.video.watchnixtoons2
-plugin.video.xstream-player
 plugin.video.youtube
 plugin.video.ytchannels
-script.realdebrid
 
 === Context menus ===
 context.elementum
@@ -311,89 +305,6 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter, The Red Wizard" version="3.5.06">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests" version="2.19.1"/>
-    </requires>
-    <extension library="resources/lib/fen.py" point="xbmc.python.pluginsource">
-        <provides>video</provides>
-    </extension>
-    <extension library="resources/lib/service.py" point="xbmc.service"/>
-    <extension library="resources/lib/" point="xbmc.python.module"/>
-    <extension point="xbmc.addon.metadata">
-        <lifecyclestate type="deprecated">Reason: No longer actively maintained or developed.</lifecyclestate>
-        <reuselanguageinvoker>true</reuselanguageinvoker>
-        <summary lang="en">Access your content from Furk, Easynews and Debrid Clouds.</summary>
-        <description lang="en">This add-on is intended for advanced Kodi users only. You must own the content of any media you play through this addon.</description>
-        <platform>all</platform>
-		<disclaimer lang="en">The author of this addon does not host any of the content which is found and has no affiliation with any of the content providers.</disclaimer>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <assets>
-            <icon>fen_icon.png</icon>
-            <fanart>fen_fanart.png</fanart>
-        </assets>
-        <news>Unofficial updates by The Red Wizard. For the latest changes, see the Changelog in FEN->Tools.</news>
-    </extension>
-</addon>
-
-
-<addon id="plugin.video.fenlight" name="Fen Light" provider-name="AnonyMouse, Tikipeter" version="2.2.05">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.pil" version="1.1.7"/>
-        <import addon="script.module.requests" version="2.19.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="resources/lib/fenlight.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="resources/lib/service.py"/>
-    <extension point="xbmc.python.module" library="resources/lib/"/>
-    <extension point="xbmc.addon.metadata">
-        <lifecyclestate type="deprecated">Reason: No longer actively maintained. Use the Red Light fork version instead.</lifecyclestate>
-        <reuselanguageinvoker>true</reuselanguageinvoker>
-        <summary lang="en">Access your content from Easynews and Debrid Clouds.</summary>
-        <description lang="en">This add-on is intended for advanced Kodi users only. You must own the content of any media you play through this addon. This is an English language only add-on.</description>
-        <platform>all</platform>
-		<disclaimer lang="en">The author of this addon does not host any of the content which is found and has no affiliation with any of the content providers.</disclaimer>
-        <license/>
-        <assets>
-            <icon>fenlight_icon_01.png</icon>
-            <fanart>fenlight_fanart_01.jpg</fanart>
-        </assets>
-        <news>INFO: For latest changes see Changelog within Tools of add-on.
-[B]*** This will probably be the last update to Fen Light ***[/B]
-        </news>
-    </extension>
-</addon>
-
-
-<addon id="plugin.video.fenlight" name="Fen Light+" provider-name="Tikipeter/thejason40" version="2.1.20">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests" version="2.19.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="resources/lib/fenlight.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="resources/lib/service.py"/>
-    <extension point="xbmc.python.module" library="resources/lib/"/>
-    <extension point="xbmc.addon.metadata">
-        <lifecyclestate type="deprecated">Reason: No longer actively maintained. Use the Red Light fork version instead.</lifecyclestate>
-        <reuselanguageinvoker>true</reuselanguageinvoker>
-        <summary lang="en">Access your content from Easynews and Debrid Clouds.</summary>
-        <description lang="en">This add-on is intended for advanced Kodi users only. You must own the content of any media you play through this addon. This is an English language only add-on.</description>
-        <platform>all</platform>
-		<disclaimer lang="en">The author of this addon does not host any of the content which is found and has no affiliation with any of the content providers.</disclaimer>
-        <assets>
-            <icon>flpi.png</icon>
-            <fanart>flpfa.jpg</fanart>
-        </assets>
-        <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
-    </extension>
-</addon>
-
-
 <addon id="plugin.video.free99" version="2.0.1" name="[COLOR goldenrod]Free99[/COLOR]" provider-name="JewBMX, DIGGZ">
     <requires>
         <import addon="script.module.six" />
@@ -618,83 +529,6 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.premiumizerx" version="2023.01.24" name="Premiumizer" provider-name="aenema">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.beautifulsoup4" />
-		<import addon="script.module.requests" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="main.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="kodi.context.item">
-		<menu id="kodi.core.main">
-			<menu>
-				<label>[COLOR red]Premiumizer[/COLOR]</label>
-				<item library="context/updatecache.py">
-					<label>New Cloud Cache</label>
-					<visible>System.HasAddon(plugin.video.premiumizerx)</visible>
-				</item>
-				<item library="context/updatelibrary.py">
-					<label>Update Library</label>
-					<visible>System.HasAddon(plugin.video.premiumizerx)</visible>
-				</item>
-				<item library="context/contextTools.py">
-					<label>Settings</label>
-					<visible>System.HasAddon(plugin.video.premiumizerx)</visible>
-				</item>
-			</menu>
-		</menu>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-        <description>Premiumize Cloud Addon with a twist![CR]This addon is inteded for use with content that you currently own! The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</description>
-		<summary lang="en">premiumizer Cloud Addon</summary>
-		<platform>all</platform>
-		<forum>-</forum>
-		<website>http://premiumize.me</website>
-		<source>-</source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-		<news>
-2023.01.24 - Merged pushes from Peno64 - thanks fro the fixes 	
-2022.01.16 - Changed call translatePath from xbmc to xbmcvfs. Still works on kodi matrix but now also on nexus
-2021.04.23 - Updated Addon to Python 3, compatible to Kodi 19
-2019.02.17 - Switched to Oauth Authorization
-2019.02.09 - Added sort options for Trakt Lists
-2019.02.06 - (SETTINGS) Added ability to see and play non  video files.
-2018.11.28 - Hotfixes and changed NextUp skin
-2018.08.06 - Fixed missing tv shows seasons while browsing content
-2018.08.05 - Fixed Playback Issues
-2018.07.10 - Improved post playback routines and checks
-2018.05.10 - User Requests: Transcoded option for playback - Show Only Video Files
-2018.05.10 - Added Delete Items after Watched + autodelete setting, Added Autoplay under Scraper Settings
-2018.04.21 - Library now match your cloud folders and files structures. Selective sync updated and improved to reflect changes
-2018.04.17 - Rewrote Cloud Sync to Library. Now is a selective Mode instead of a full Cloud Copy. Some improvements in handling files.
-2018.04.13 - Code improvements. Improved library sync all around
-2018.03.26 - Scraper Recursive Folders
-2018.03.25 - Added Library Sync
-2018.03.06 - Recursive Metadata in Cloud Folders and improved overall
-2018.01.22 - User Request. Added Filesize to files
-2018.01.14 - Improved code and title matching. Added TV Shows metadata in cloud sections(need to be enabled in the settings)
-2018.01.12 - Improved title matching and playback. Overall cleanup
-2018.01.12 - Fixed Playback Issues and some code cleanup. Better Title matching in Cloud Section
-2018.01.11 - Added Meta to Movies in Cloud Section if title starts with the format "TITLE (YEAR)" i.e: Dunkirk (2017)
-2018.01.08 - Added Rename - Match in Browse Lists and some additional cleanups
-2018.01.05.3 - Added Download Features and tweaked lists
-2018.01.05
-
-- Improved results and transfer functions
-2018.01.04
-
-- Initial Release
-        </news>
-	</extension>
-</addon>
-
-
 <addon id="plugin.video.ptfm" name="Play That Funky Music" version="1.0.3" provider-name="Metal Dude">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
@@ -721,47 +555,7 @@ plugin.video.GreenKlikPremium
 </addon>
 
 
-<addon id="plugin.video.realizerx" version="2023.01.24" name="Realizer" provider-name="aenema">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.beautifulsoup4" />
-		<import addon="script.module.requests" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="main.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-        <description>Cloud Addon with a twist![CR]This addon is inteded for use with content that you currently own! The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</description>
-		<summary lang="en">Realizer Cloud Addon</summary>
-		<platform>all</platform>
-		<forum>-</forum>
-		<website></website>
-		<source>-</source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-		<news>
-2023.01.24 - Merged pushes from Peno64 - thanks fro the fixes 			
-2022.01.16 - Changed call translatePath from xbmc to xbmcvfs. Still works on kodi matrix but now also on nexus
-2021.04.24 - Forked Realizer to Realizer py3 - new version will work on python 3 and kodi matrix
-2019.05.01 - Improved RSS Manager - added Rss Reader Mode - Added a Timer for auto RSS update
-2019.02.09 - Added sort options for Trakt Lists
-2019.02.06.2 - Hotfix Torrent Packs are now sorted alphabetically
-2019.02.06 - Improved Multipage Scraping for Torrent Packs and Single Items
-2019.01.31 - Hotfixes on paginations and api calls
-2019.01.30 - Added Rss Manager, Improved modules and lists
-2019.01.27.5 - Improved multi pages torrent lists and scraping, (OPTION) Cached cloud list option, (OPTION) sort torrent list alphabetically
-2019.01.22 - Improved matching titles and torrent checks
-2019.01.20 - Fixed Scraping Bugs and fallback for Torrent Packs
-2019.x.x - Initial Release
-        </news>
-	</extension>
-</addon>
-
-
-<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="2.6.2">
+<addon id="plugin.video.redlight" name="[COLOR red]Red Light[/COLOR]" provider-name="[COLOR red]The Red Wizard[/COLOR]" version="2.6.3">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -956,29 +750,6 @@ Random updates by lolage.
 </addon>
 
 
-<addon id="plugin.video.xstream-player" name="XStream Player" version="2.1.5" provider-name="XStream Player">
-    <requires>
-        <import addon="xbmc.python" version="3.0.1"/>
-        <import addon="script.module.requests" version="2.22.0"/>
-        <import addon="pvr.iptvsimple" version="21.4.0"/>
-        <import addon="service.upnext" version="1.1.0" optional="true"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="resources/lib/addon.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">XStream Player - Organised M3U &amp; Xtream player</summary>
-        <description lang="en_GB">A clean M3U &amp; Xtream player with proper sorting: PVR, Live TV, Movies, Series and Replay, plus EPG support.</description>
-        <platform>all</platform>
-        <license>MIT</license>
-        <source>https://github.com/Pesicp/XStream-Player</source>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-    </extension>
-</addon>
-
-
 <addon id="plugin.video.youtube" name="YouTube" version="7.4.4+unofficial.1" provider-name="anxdpanic, bromix, MoojMidge">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -1121,36 +892,6 @@ Random updates by lolage.
 			<icon>icon.png</icon>
 		</assets>
 	</extension>
-</addon>
-
-
-<addon id="script.realdebrid" name="RealDebrid" version="0.7" provider-name="ptom, peno">
-    <requires>
-        <import addon="script.module.requests" version="2.3.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-	<provides>video</provides>
-    </extension>
-    <extension point="kodi.context.item">
-        <menu id="kodi.core.main">
-          <item library="addon.py">
-            <label>Play using RealDebrid</label>
-            <visible>Container.Content(episodes) | Container.Content(movies)</visible>
-          </item>
-        </menu>
-    </extension>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.addon.metadata">
-	<description lang="en">Unofficial RealDebrid client. Manage your torrents, unrestricted links and view host statuses all within Kodi.</description>
-        <summary>Unofficial RealDebrid client. Manage your torrents, unrestricted links and view host statuses all within Kodi.</summary>
-        <news>v0.6 - Made it Matrix complient + several fixes</news>
-	<platform>all</platform>
-	<language>en</language>
-        <assets>
-    		<icon>icon.png</icon>
-    		<fanart>fanart.png</fanart>
-        </assets>
-    </extension>
 </addon>
 
 
@@ -2591,7 +2332,7 @@ v0.5.9 (2022-03-22)
 </addon>
 
 
-<addon id="script.module.magneto" version="6.09.03" name="Magneto Module" provider-name="Magneto">
+<addon id="script.module.magneto" version="6.09.04" name="Magneto Module" provider-name="Magneto">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
